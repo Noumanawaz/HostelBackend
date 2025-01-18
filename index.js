@@ -7,7 +7,7 @@ import mongoose from 'mongoose';
 dotenv.config();
 
 const app = express();
-
+app.use(express.json())
 // CORS configuration
 const corsOptions = {
     origin: '*', // Allow all origins for development (update for production)
