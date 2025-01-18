@@ -24,7 +24,7 @@ const port = process.env.PORT || 4000; // Use environment variable for port
 // MongoDB connection
 const mongoURI = process.env.MONGODB_URI;
 mongoose.connect(mongoURI, {
-    connectTimeoutMS: 60000,   // Increase the connection timeout
+    connectTimeoutMS: 120000,   // Increase the connection timeout
     serverSelectionTimeoutMS: 120000  // Increase server selection timeout to 2 minutes
 })  
     .then(() => console.log('MongoDB connected'))
